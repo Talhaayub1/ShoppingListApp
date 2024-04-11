@@ -1,107 +1,105 @@
-html,
-body {
+/* Improved CSS for UI Interior and Attractiveness */
+
+/* Reset default margin and padding */
+* {
      margin: 0;
      padding: 0;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     background-color: #EEF0F4;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Rubik', sans-serif;
+     background-color: #f7f7f7;
+     /* Light gray background */
      user-select: none;
 }
 
 .container {
-     display: flex;
-     flex-direction: column;
-     max-width: 320px;
-     margin: 30px auto;
-     border: 2px solid #E0E0E0;
-     /* Light border */
-     border-radius: 8px;
-     background-color: #FFF9C4;
+     max-width: 400px;
+     margin: 50px auto;
+     padding: 20px;
+     border-radius: 10px;
+     background-color: #ffffff;
      /* White background */
-     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      /* Subtle shadow */
-     padding: 15px 20px;
 }
 
 img {
-     width: 130px;
-     margin: 0 auto;
+     display: block;
+     margin: 0 auto 20px;
+     /* Center image */
+     max-width: 50%;
 }
 
-input {
-     color: #432000;
-     /* Dark brown text color */
-     background-color: #F5F5F5;
-     /* Light gray background */
-     border: 1px solid #434242;
-     /* Light border */
+input[type="text"] {
+     width: 100%;
      padding: 15px;
+     margin-bottom: 20px;
+     border: 1px solid #cccccc;
+     /* Light gray border */
      border-radius: 8px;
-     font-size: 20px;
-     text-align: center;
-     font-family: 'Rubik', sans-serif;
-     margin: 10px 0;
+     font-size: 18px;
+     background-color: #f3f3f3;
+     /* Light gray background */
      transition: border-color 0.3s ease;
 }
 
-input:focus {
+input[type="text"]:focus {
      outline: none;
-     border-color: #FFF9C4;
-     /* Yellow border on focus */
-     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-     /* Subtle shadow on focus */
-}
-button {
-     color: #000000;
-     background-color: #FFA500;
-     /* Orange background */
-     border: none;
-     padding: 15px 25px;
-     border-radius: 8px;
-     font-size: 1.5rem;
-     font-weight: bold;
-     text-align: center;
-     font-family: 'Rubik', sans-serif;
-     transition: background-color 0.5s ease;
-     cursor: pointer;
-     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-     /* Subtle shadow */
-}
-button:hover {
-     background-color: #FF6347;
-     /* Reddish-orange on hover */
-     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-     /* Enhanced shadow on hover */
+     border-color: #ffa500;
+     /* Orange border on focus */
+     box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.1);
+     /* Light orange shadow on focus */
 }
 
+button {
+     width: 100%;
+     padding: 15px;
+     border: none;
+     border-radius: 8px;
+     font-size: 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+     background-color: #ffa500;
+     /* Orange background */
+     color: #ffffff;
+     /* White text */
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+
+button:hover {
+     background-color: #ff7c00;
+     /* Darker orange on hover */
+}
 
 ul {
      list-style: none;
      padding: 0;
+     margin-top: 20px;
+
      display: flex;
-     flex-wrap:wrap;
-     /* max-width: 440px; */
-     gap:20px;
+     flex-wrap: wrap;
+     gap: 20px;
 }
 
 ul li {
-     font-size: 20px;
-     cursor: pointer;
-     flex-grow: 1;
-     text-align: center;
-     background-color: #F5F5F5;
-     /* Light gray background */
-     border: 1px solid #424242;
-     /* Light border */
-     padding: 20px;
+     width: calc(50% - 10px);
+     /* Two columns with a small gap */
+     margin-bottom: 10px;
+     padding: 15px;
      border-radius: 8px;
-     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+     background-color: #ffffff;
+     /* White background */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
      /* Subtle shadow */
-     transition: background-color 0.3s ease, transform 0.2s ease;
+     transition: transform 0.2s ease;
 }
 
 ul li:hover {
-     background-color: #f3e178;
-     /* Yellow on hover */
-     transform: translateY(-2px);
+     transform: translateY(-3px);
      /* Lift slightly on hover */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     /* Enhanced shadow on hover */
 }
