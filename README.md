@@ -1,7 +1,3 @@
-Certainly! Here's the modified version of the README without the authentication section:
-
----
-
 # 🛒 Shopping List App
 
 A shopping list app where you can add items, collaborate with others, and manage household shopping needs together. This app makes it easy for everyone to coordinate their shopping lists.
