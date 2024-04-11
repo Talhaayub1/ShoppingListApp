@@ -53,7 +53,7 @@ onValue(shoppingListInDB, function (snapshot) {
       // console.log(showAllItems[i]);
     }
   } else {
-    shoppingList.innerHTML = "No items available, Try To Add";
+    shoppingList.innerHTML = `<p> <b>No items available, Try To Add</b> </p>`;
   }
 });
 
